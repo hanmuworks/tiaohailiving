@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳海living青年社区 - 入住指南</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;  /* 主色 - 蓝色 */
+            --accent-color: #ff8f00;   /* 强调色 - 橙色 */
+            --light-bg: #f5f9ff;      /* 浅色背景 */
+            --dark-text: #202124;      /* 深色文字 */
+            --light-text: #5f6368;     /* 浅色文字 */
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        
+        .welcome-text {
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+        
+        .info-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        
+        .info-item {
+            margin-bottom: 15px;
+        }
+        
+        .info-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        .info-title:hover {
+            background-color: rgba(26, 115, 232, 0.1);
+        }
+        
+        .info-title.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .info-content {
+            margin-top: 5px;
+            color: var(--dark-text);
+            padding: 10px;
+            border-left: 3px solid var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.7);
+            display: none;
+        }
+        
+        .info-content.show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+        
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--light-text);
+            font-size: 0.9em;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 20px 10px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到跳海living青年社区</h1>
+        <div class="welcome-text">很高兴遇见你，愿这里成为你旅途中的温暖驿站</div>
+    </header>
+    
+    <div class="container">
+        <div class="info-section">
+            <h2>入住指南</h2>
+            
+            <div class="info-item">
+                <div class="info-title" onclick="toggleInfo(this)">WiFi信息</div>
+                <div class="info-content">
+                    网络名称: <span class="highlight">跳海living</span><br>
+                    密码: <span class="highlight">happy2023</span>
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-title" onclick="toggleInfo(this)">后门信息</div>
+                <div class="info-content">
+                    位置: 建筑背面左侧楼梯旁<br>
+                    密码: <span class="highlight">1234#</span> (24小时可用)
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-title" onclick="toggleInfo(this)">快递服务</div>
+                <div class="info-content">
+                    收件地址: 北京市朝阳区XX路XX号跳海living青年社区<br>
+                    附近快递站: 出大门右转200米便利店旁
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>交通信息</h2>
+            
+            <div class="info-item">
+                <div class="info-title" onclick="toggleInfo(this)">地铁</div>
+                <div class="info-content">
+                    最近地铁站: XX站 (10号线/13号线)<br>
+                    步行约8分钟
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-title" onclick="toggleInfo(this)">公交</div>
+                <div class="info-content">
+                    最近公交站: XX路站 (123路, 456路)<br>
+                    步行约5分钟
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>多人间公约</h2>
+            <div class="info-content show">
+                1. 保持安静时间: 23:00-8:00<br>
+                2. 公共区域请保持整洁<br>
+                3. 请勿带非住客进入房间<br>
+                4. 个人物品请妥善保管<br>
+                5. 节约用水用电
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>紧急联系电话</h2>
+            <div class="info-content show">
+                前台: <span class="highlight">123-4567-8910</span><br>
+                社区经理: <span class="highlight">138-8888-8888</span><br>
+                紧急医疗: <span class="highlight">120</span><br>
+                报警电话: <span class="highlight">110</span>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>医疗信息</h2>
+            <div class="info-content show">
+                <div class="info-item">
+                    <div class="info-title" onclick="toggleInfo(this)">附近医院</div>
+                    <div class="info-content">
+                        1. XX医院 (三甲综合医院)<br>
+                        地址: 北京市朝阳区XX路XX号<br>
+                        距离: 约1.5公里<br>
+                        电话: <span class="highlight">010-12345678</span>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-title" onclick="toggleInfo(this)">24小时药店</div>
+                    <div class="info-content">
+                        1. XX大药房<br>
+                        地址: 出大门左转300米<br>
+                        电话: <span class="highlight">010-87654321</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>古城美食推荐</h2>
+            <div class="info-content show">
+                <div class="info-item">
+                    <div class="info-title" onclick="toggleInfo(this)">传统小吃</div>
+                    <div class="info-content">
+                        1. XX老字号豆汁店 (百年老店)<br>
+                        地址: 古城南门内100米<br>
+                        推荐: 豆汁、焦圈、驴打滚
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-title" onclick="toggleInfo(this)">特色餐厅</div>
+                    <div class="info-content">
+                        1. XX胡同私家菜<br>
+                        地址: 古城XX胡同12号<br>
+                        推荐: 胡同烤鸭、京酱肉丝
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-title" onclick="toggleInfo(this)">夜市推荐</div>
+                    <div class="info-content">
+                        1. XX夜市 (18:00-24:00)<br>
+                        地址: 古城广场西侧<br>
+                        推荐: 炸酱面、爆肚、糖葫芦
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>如有任何问题，请随时联系我们的工作人员</p>
+        <p>祝您入住愉快！</p>
+    </footer>
+
+    <script>
+        function toggleInfo(element) {
+            // 切换当前点击的标题的active类
+            element.classList.toggle('active');
+            
+            // 找到相邻的内容元素
+            const content = element.nextElementSibling;
+            
+            // 切换显示/隐藏
+            content.classList.toggle('show');
+            
+            // 关闭其他打开的内容
+            const allContents = document.querySelectorAll('.info-content.show');
+            const allTitles = document.querySelectorAll('.info-title.active');
+            
+            allContents.forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('show');
+                }
+            });
+            
+            allTitles.forEach(title => {
+                if (title !== element) {
+                    title.classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
